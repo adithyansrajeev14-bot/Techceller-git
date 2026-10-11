@@ -8,6 +8,7 @@
   --primary-hover: #2c5282;
   --btn-text: #ffffff;
   --error-color: #e53e3e;
+  --error-hover: #c53030;
   --success-color: #38a169;
   --success-hover: #2f855a;
 }
@@ -97,6 +98,20 @@ button:hover {
 
 .btn-green:hover {
   background-color: var(--success-hover);
+}
+
+.btn-red {
+  background-color: var(--error-color);
+}
+
+.btn-red:hover {
+  background-color: var(--error-hover);
+}
+
+.exit-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .status-message {
