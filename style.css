@@ -9,6 +9,7 @@
   --btn-text: #ffffff;
   --error-color: #e53e3e;
   --success-color: #38a169;
+  --success-hover: #2f855a;
 }
 
 * {
@@ -88,6 +89,14 @@ button {
 
 button:hover {
   background-color: var(--primary-hover);
+}
+
+.btn-green {
+  background-color: var(--success-color);
+}
+
+.btn-green:hover {
+  background-color: var(--success-hover);
 }
 
 .status-message {
