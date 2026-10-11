@@ -1,0 +1,105 @@
+:root {
+  --bg-color: #f4f6f8;
+  --card-bg: #ffffff;
+  --text-color: #1a202c;
+  --muted-color: #718096;
+  --border-color: #e2e8f0;
+  --primary-color: #2b6cb0;
+  --primary-hover: #2c5282;
+  --btn-text: #ffffff;
+  --error-color: #e53e3e;
+  --success-color: #38a169;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--muted-color);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+.status-message {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.status-message.error {
+  color: var(--error-color);
+}
+
+.status-message.success {
+  color: var(--success-color);
+}
