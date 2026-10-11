@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #f4f6f8;
+  --bg-gradient: linear-gradient(135deg, #0a192f, #1e3a8a);
   --card-bg: #ffffff;
   --text-color: #1a202c;
   --muted-color: #718096;
@@ -19,7 +19,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: var(--bg-color);
+  background: var(--bg-gradient);
   color: var(--text-color);
   min-height: 100vh;
   display: flex;
